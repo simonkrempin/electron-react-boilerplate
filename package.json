@@ -6,12 +6,11 @@
   "main": ".webpack/main",
   "scripts": {
     "dev": "electron-forge start",
-    "start": "concurrently -k \"npm run tailwind -- --watch\" \"electron-forge start\"",
-    "package": "npm run tailwind && electron-forge package",
-    "make": "npm run tailwind && electron-forge make",
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make",
     "publish": "electron-forge publish",
-    "lint": "eslint --ext .ts,.tsx .",
-    "tailwind": "npx tailwindcss -i ./src/tailwind.css -o ./src/styles.css"
+    "lint": "eslint --ext .ts,.tsx ."
   },
   "keywords": [],
   "author": {

@@ -10,8 +10,8 @@ const render = () => {
 const HelloMessage = (): React.ReactElement => {
     return (
         <>
-            <h1 className="text-3xl">💖 Hello World!</h1>
-            <p>Welcome to your Electron application.</p>
+            <h1 className="text-3xl font-bold">💖 Hello World!</h1>
+            <p className="text-sm">Welcome to your Electron application.</p>
         </>
     );
 };
